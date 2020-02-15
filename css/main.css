@@ -1126,6 +1126,18 @@ pre .javascript .function {
   margin: 0 auto;
   max-width: 120px;
   padding: 2px;
+  border-radius: 50%;
+  transition: 2s all;
+  border-radius: 50%;
+}
+.site-author-image:hover {
+  transform: rotateZ(360deg);
+}
+.site-author-image {
+  transition: transform 1s ease-out;
+}
+.site-author-image:hover {
+  transform: rotateZ(360deg);
 }
 .site-author-name {
   color: #222;
@@ -1153,7 +1165,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #dab99c;
+  background: #cd2e95;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1954,6 +1966,13 @@ pre .javascript .function {
 }
 #qr p {
   text-align: center;
+}
+.post-body p a {
+  color: #345;
+  border-bottom: none;
+}
+.post-body p a:hover {
+  color: #800080;
 }
 .category-all-page .category-all-title {
   text-align: center;
