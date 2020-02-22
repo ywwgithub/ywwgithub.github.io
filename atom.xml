@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-02-22T10:33:38.603Z</updated>
+  <updated>2020-02-22T10:50:45.136Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2020/02/22/Linux%E7%9A%84%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F/"/>
     <id>http://yoursite.com/2020/02/22/Linux%E7%9A%84%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F/</id>
     <published>2020-02-22T10:29:28.000Z</published>
-    <updated>2020-02-22T10:33:38.603Z</updated>
+    <updated>2020-02-22T10:50:45.136Z</updated>
     
     <content type="html"><![CDATA[<h1 id="一、-Linux的前世"><a href="#一、-Linux的前世" class="headerlink" title="一、 Linux的前世"></a>一、 Linux的前世</h1><h2 id="1、发展史"><a href="#1、发展史" class="headerlink" title="1、发展史"></a>1、发展史</h2><table><thead><tr><th></th><th></th><th></th></tr></thead><tbody><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr><tr><td></td><td></td><td></td></tr></tbody></table><h1 id="二、Linux的今生"><a href="#二、Linux的今生" class="headerlink" title="二、Linux的今生"></a>二、Linux的今生</h1>]]></content>
     
@@ -35,6 +35,12 @@
     </summary>
     
     
+      <category term="基础" scheme="http://yoursite.com/categories/%E5%9F%BA%E7%A1%80/"/>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+      <category term="故事" scheme="http://yoursite.com/tags/%E6%95%85%E4%BA%8B/"/>
     
   </entry>
   
