@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Docker搭建ftp服务器</title>
+    <url>/2020/02/22/docker%E6%90%AD%E5%BB%BAftp%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
+    <content><![CDATA[<h1 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h1><h2 id="1、安装了docker-io或者docker-ce"><a href="#1、安装了docker-io或者docker-ce" class="headerlink" title="1、安装了docker-io或者docker-ce"></a>1、安装了docker-io或者docker-ce</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">Centos：$ sudo yum <span class="keyword">install</span> docker-ce</span><br><span class="line"> </span><br><span class="line">Ubuntu：$ sudo apt-<span class="keyword">get</span> <span class="keyword">update</span></span><br><span class="line">        $ sudo apt-<span class="keyword">get</span> <span class="keyword">install</span> docker-ce</span><br></pre></td></tr></table></figure>
+
+<h2 id="2、要有一个vsftpd的docker镜像"><a href="#2、要有一个vsftpd的docker镜像" class="headerlink" title="2、要有一个vsftpd的docker镜像"></a>2、要有一个vsftpd的docker镜像</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">1. docker search vsftpd         <span class="comment">#寻找vsftpd的镜像</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">#假如我们找到一个最多引用的，叫fauria/vsftpd</span></span><br><span class="line"> </span><br><span class="line">2. docker pull fauria/vsftpd  <span class="comment">#把镜像pull到本地</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="3、创建vsftpd的container"><a href="#3、创建vsftpd的container" class="headerlink" title="3、创建vsftpd的container"></a>3、创建vsftpd的container</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">$ docker run -d -p 21:21 -p 20:20 -p 21100-21110:21100-21110 -v /Ftpfile:/home/vsftpd -e FTP_USER=myuser -e FTP_PASS=mypass -e PASV_ADDRESS=192.168.120.88 -e PASV_MIN_PORT=21100 -e PASV_MAX_PORT=21110 <span class="comment">--name vsftpd --restart=always fauria/vsftpd</span></span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="comment">#-p进行端口绑定映射</span></span><br><span class="line"><span class="comment"># -v进行文件目录的映射 FTP_UESR 和FTP_PASS如果设定了会在container里面的 </span></span><br><span class="line"><span class="comment">#/etc/vsftpd/virtual_users.txt</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">#PASV_MIN_PORT和PASV_MAX_PORT映射的是被动模式下端口使用范围</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">#PASV_ADDRESS指的的宿主机地址</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="二、配置成自己想要的参数"><a href="#二、配置成自己想要的参数" class="headerlink" title="二、配置成自己想要的参数"></a>二、配置成自己想要的参数</h1><h2 id="1、修改、完善vsftpd的设置"><a href="#1、修改、完善vsftpd的设置" class="headerlink" title="1、修改、完善vsftpd的设置"></a>1、修改、完善vsftpd的设置</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">#1、我们先进入container里面</span></span><br><span class="line"> </span><br><span class="line">docker exec -i -t vsftpd bash </span><br><span class="line"> </span><br><span class="line"><span class="comment">#2、修改并生成虚拟用户模式下的用户db文件</span></span><br><span class="line"> </span><br><span class="line">vi /etc/vsftpd/virtual_users.txt <span class="comment">#编辑配置文件写入用户跟密码</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">#假如我们添加了user用户</span></span><br><span class="line"> </span><br><span class="line">mkdir /home/vsftpd/user <span class="comment">#建立新用户文件夹 </span></span><br><span class="line"> </span><br><span class="line">/usr/bin/db_load -T -t hash</span><br><span class="line"> -f /etc/vsftpd/virtual_users.txt /etc/vsftpd/virtual_users.db</span><br><span class="line"> <span class="comment">#把登录的验证信息写入数据库</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="2、重启container，验证结果"><a href="#2、重启container，验证结果" class="headerlink" title="2、重启container，验证结果"></a>2、重启container，验证结果</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">docker restart vsftpd</span><br><span class="line">或者：</span><br><span class="line">sudo service docker status 查看服务</span><br><span class="line">sudo service docker <span class="keyword">start</span> 启动服务</span><br><span class="line"><span class="keyword">ftp</span>保存位置</span><br><span class="line">/my/<span class="keyword">data</span>/<span class="keyword">directory</span>/myuser/</span><br></pre></td></tr></table></figure>
+
+<h1 id="三、ftp两种模式介绍"><a href="#三、ftp两种模式介绍" class="headerlink" title="三、ftp两种模式介绍"></a>三、ftp两种模式介绍</h1><h2 id="1、主动模式"><a href="#1、主动模式" class="headerlink" title="1、主动模式"></a>1、主动模式</h2><p>文件传输是客服端建立服务 然后ftp服务端根据这个服务推送文件数据过来</p>
+<h2 id="2、被动模式"><a href="#2、被动模式" class="headerlink" title="2、被动模式"></a>2、被动模式</h2><p>文件传输是ftp服务根据PASV_MIN_PORT~ PASV_MAX_PORT这2个环境变量的范围随机一个ip提供服务给客服端下载</p>
+<h2 id="3、总结"><a href="#3、总结" class="headerlink" title="3、总结"></a>3、总结</h2><p>根据上面的模式 使用主动模式 客服端如果存在防火墙请把服务端口号开放出来</p>
+<p>使用被动模式 服务端就要把PASV_MIN_PORT~ PASV_MAX_PORT范围的端口开放出来</p>
+<p>如果使用了docker PASV_MIN_PORT~ PASV_MAX_PORT 这个范围的端口请映射成一样的</p>
+]]></content>
+      <categories>
+        <category>ftp</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>ftp</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Linux的前世今生</title>
     <url>/2020/02/22/Linux%E7%9A%84%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F/</url>
     <content><![CDATA[<h1 id="一、-Linux的前世"><a href="#一、-Linux的前世" class="headerlink" title="一、 Linux的前世"></a>一、 Linux的前世</h1><h2 id="1、时间表"><a href="#1、时间表" class="headerlink" title="1、时间表"></a>1、时间表</h2><table>
