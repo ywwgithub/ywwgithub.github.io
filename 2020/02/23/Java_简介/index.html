@@ -1,22 +1,272 @@
-<?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>Java_开发环境的搭建</title>
-    <url>/2020/02/23/java_%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E6%90%AD%E5%BB%BA/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>java</category>
-        <category>环境</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>环境</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java_简介</title>
-    <url>/2020/02/23/Java_%E7%AE%80%E4%BB%8B/</url>
-    <content><![CDATA[<h1 id="一、什么是Java"><a href="#一、什么是Java" class="headerlink" title="一、什么是Java"></a>一、什么是Java</h1><p>Java是一门<a href="https://baike.baidu.com/item/面向对象" target="_blank" rel="noopener">面向对象</a>编程语言，不仅吸收了<a href="https://baike.baidu.com/item/C%2B%2B" target="_blank" rel="noopener">C++</a>语言的各种优点，还摒弃了C++里难以理解的<a href="https://baike.baidu.com/item/多继承" target="_blank" rel="noopener">多继承</a>、<a href="https://baike.baidu.com/item/指针/2878304" target="_blank" rel="noopener">指针</a>等概念，因此Java语言具有功能强大和简单易用两个特征。Java语言作为静态面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程  。</p>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+<link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+<style>
+    .pace .pace-progress {
+        background: #1E92FB; /*进度条颜色*/
+        height: 3px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #1E92FB; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #1E92FB;    /*上边框颜色*/
+        border-left-color: #1E92FB;    /*左边框颜色*/
+    }
+</style>
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css">
+  <script src="/lib/pace/pace.min.js"></script>
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"scrollpercent":true,"b2t":true,"onmobile":false},"copycode":{"enable":true,"show_result":"复制成功","style":"default"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}}},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="一、什么是JavaJava是一门面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，因此Java语言具有功能强大和简单易用两个特征。Java语言作为静态面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程  。 Java具有简单性、面向对象、分布式、健壮性、安全性、平台独立与可移植性、多线程、动态性等特点  。 二、">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java_简介">
+<meta property="og:url" content="http://yoursite.com/2020/02/23/Java_%E7%AE%80%E4%BB%8B/index.html">
+<meta property="og:site_name" content="破窗理论">
+<meta property="og:description" content="一、什么是JavaJava是一门面向对象编程语言，不仅吸收了C++语言的各种优点，还摒弃了C++里难以理解的多继承、指针等概念，因此Java语言具有功能强大和简单易用两个特征。Java语言作为静态面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程  。 Java具有简单性、面向对象、分布式、健壮性、安全性、平台独立与可移植性、多线程、动态性等特点  。 二、">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://imgsa.baidu.com/exp/w=500/sign=62f250cda251f3dec3b2b964a4eff0ec/314e251f95cad1c858626420723e6709c83d51d8.jpg">
+<meta property="og:image" content="https://imgsa.baidu.com/exp/w=500/sign=13632fbcab1ea8d38a227404a70b30cf/dcc451da81cb39db9664ff51dd160924ab183014.jpg">
+<meta property="og:image" content="https://imgsa.baidu.com/exp/w=500/sign=357c043641086e066aa83f4b32097b5a/f31fbe096b63f624e685a1048a44ebf81b4ca3d9.jpg">
+<meta property="og:image" content="https://imgsa.baidu.com/exp/w=500/sign=eba9c015424a20a4311e3cc7a0539847/342ac65c10385343534d1f269e13b07eca808833.jpg">
+<meta property="article:published_time" content="2020-02-23T11:44:34.000Z">
+<meta property="article:modified_time" content="2020-02-23T11:52:25.604Z">
+<meta property="article:author" content="yuwenwu">
+<meta property="article:tag" content="java">
+<meta property="article:tag" content="简介">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://imgsa.baidu.com/exp/w=500/sign=62f250cda251f3dec3b2b964a4eff0ec/314e251f95cad1c858626420723e6709c83d51d8.jpg">
+
+<link rel="canonical" href="http://yoursite.com/2020/02/23/Java_%E7%AE%80%E4%BB%8B/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true
+  };
+</script>
+
+  <title>Java_简介 | 破窗理论</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="破窗理论" type="application/atom+xml">
+</head>
+
+
+
+<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+	
+	<a href="https://github.com/ywwgithub" target="_blank" rel="noopener" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">破窗理论</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <p class="site-subtitle">-Jack·yu-</p>
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">6</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">5</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">4</span></a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/23/Java_%E7%AE%80%E4%BB%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="yuwenwu">
+      <meta itemprop="description" content="余文武的个人博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="破窗理论">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Java_简介
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-02-23 19:44:34 / 修改时间：19:52:25" itemprop="dateCreated datePublished" datetime="2020-02-23T19:44:34+08:00">2020-02-23</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="一、什么是Java"><a href="#一、什么是Java" class="headerlink" title="一、什么是Java"></a>一、什么是Java</h1><p>Java是一门<a href="https://baike.baidu.com/item/面向对象" target="_blank" rel="noopener">面向对象</a>编程语言，不仅吸收了<a href="https://baike.baidu.com/item/C%2B%2B" target="_blank" rel="noopener">C++</a>语言的各种优点，还摒弃了C++里难以理解的<a href="https://baike.baidu.com/item/多继承" target="_blank" rel="noopener">多继承</a>、<a href="https://baike.baidu.com/item/指针/2878304" target="_blank" rel="noopener">指针</a>等概念，因此Java语言具有功能强大和简单易用两个特征。Java语言作为静态面向对象编程语言的代表，极好地实现了面向对象理论，允许程序员以优雅的思维方式进行复杂的编程  。</p>
 <p>Java具有简单性、面向对象、<a href="https://baike.baidu.com/item/分布式/19276232" target="_blank" rel="noopener">分布式</a>、<a href="https://baike.baidu.com/item/健壮性/4430133" target="_blank" rel="noopener">健壮性</a>、<a href="https://baike.baidu.com/item/安全性/7664678" target="_blank" rel="noopener">安全性</a>、平台独立与可移植性、<a href="https://baike.baidu.com/item/多线程/1190404" target="_blank" rel="noopener">多线程</a>、动态性等特点  。</p>
 <h1 id="二、Java能干什么"><a href="#二、Java能干什么" class="headerlink" title="二、Java能干什么"></a>二、Java能干什么</h1><p>Java可以编写<a href="https://baike.baidu.com/item/桌面应用程序/2331979" target="_blank" rel="noopener">桌面应用程序</a>、<a href="https://baike.baidu.com/item/Web应用程序" target="_blank" rel="noopener">Web应用程序</a>、<a href="https://baike.baidu.com/item/分布式系统/4905336" target="_blank" rel="noopener">分布式系统</a>和<a href="https://baike.baidu.com/item/嵌入式系统/186978" target="_blank" rel="noopener">嵌入式系统</a>应用程序等 </p>
 <h1 id="三、为什么要学Java"><a href="#三、为什么要学Java" class="headerlink" title="三、为什么要学Java"></a>三、为什么要学Java</h1><p>一门永不过时的编程语言——Java 编程开发。</p>
@@ -1069,87 +1319,247 @@
 <p>6.基于SpringBoot 的Redis实战开发</p>
 <p>7.基于SpringBoot 的WebSocket实战开发</p>
 <p>8.基于SpringBoot 的ActiveMQ消息队列</p>
-]]></content>
-      <categories>
-        <category>java</category>
-      </categories>
-      <tags>
-        <tag>java</tag>
-        <tag>简介</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Docker_搭建ftp服务器</title>
-    <url>/2020/02/22/docker_%E6%90%AD%E5%BB%BAftp%E6%9C%8D%E5%8A%A1%E5%99%A8/</url>
-    <content><![CDATA[<h1 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h1><h2 id="1、安装了docker-io或者docker-ce"><a href="#1、安装了docker-io或者docker-ce" class="headerlink" title="1、安装了docker-io或者docker-ce"></a>1、安装了docker-io或者docker-ce</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">Centos：$ sudo yum <span class="keyword">install</span> docker-ce</span><br><span class="line"> </span><br><span class="line">Ubuntu：$ sudo apt-<span class="keyword">get</span> <span class="keyword">update</span></span><br><span class="line">        $ sudo apt-<span class="keyword">get</span> <span class="keyword">install</span> docker-ce</span><br></pre></td></tr></table></figure>
 
-<h2 id="2、要有一个vsftpd的docker镜像"><a href="#2、要有一个vsftpd的docker镜像" class="headerlink" title="2、要有一个vsftpd的docker镜像"></a>2、要有一个vsftpd的docker镜像</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">1. docker search vsftpd         <span class="comment">#寻找vsftpd的镜像</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">#假如我们找到一个最多引用的，叫fauria/vsftpd</span></span><br><span class="line"> </span><br><span class="line">2. docker pull fauria/vsftpd  <span class="comment">#把镜像pull到本地</span></span><br></pre></td></tr></table></figure>
+    </div>
 
-<h2 id="3、创建vsftpd的container"><a href="#3、创建vsftpd的container" class="headerlink" title="3、创建vsftpd的container"></a>3、创建vsftpd的container</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">$ docker run -d -p 21:21 -p 20:20 -p 21100-21110:21100-21110 -v /Ftpfile:/home/vsftpd -e FTP_USER=myuser -e FTP_PASS=mypass -e PASV_ADDRESS=192.168.120.88 -e PASV_MIN_PORT=21100 -e PASV_MAX_PORT=21110 <span class="comment">--name vsftpd --restart=always fauria/vsftpd</span></span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="comment">#-p进行端口绑定映射</span></span><br><span class="line"><span class="comment"># -v进行文件目录的映射 FTP_UESR 和FTP_PASS如果设定了会在container里面的 </span></span><br><span class="line"><span class="comment">#/etc/vsftpd/virtual_users.txt</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">#PASV_MIN_PORT和PASV_MAX_PORT映射的是被动模式下端口使用范围</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">#PASV_ADDRESS指的的宿主机地址</span></span><br></pre></td></tr></table></figure>
+    
+    
+    
+	 
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/java/" rel="tag">Jack java</a>
+              <a href="/tags/%E7%AE%80%E4%BB%8B/" rel="tag">Jack 简介</a>
+          </div>
 
-<h1 id="二、配置成自己想要的参数"><a href="#二、配置成自己想要的参数" class="headerlink" title="二、配置成自己想要的参数"></a>二、配置成自己想要的参数</h1><h2 id="1、修改、完善vsftpd的设置"><a href="#1、修改、完善vsftpd的设置" class="headerlink" title="1、修改、完善vsftpd的设置"></a>1、修改、完善vsftpd的设置</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">#1、我们先进入container里面</span></span><br><span class="line"> </span><br><span class="line">docker exec -i -t vsftpd bash </span><br><span class="line"> </span><br><span class="line"><span class="comment">#2、修改并生成虚拟用户模式下的用户db文件</span></span><br><span class="line"> </span><br><span class="line">vi /etc/vsftpd/virtual_users.txt <span class="comment">#编辑配置文件写入用户跟密码</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">#假如我们添加了user用户</span></span><br><span class="line"> </span><br><span class="line">mkdir /home/vsftpd/user <span class="comment">#建立新用户文件夹 </span></span><br><span class="line"> </span><br><span class="line">/usr/bin/db_load -T -t hash</span><br><span class="line"> -f /etc/vsftpd/virtual_users.txt /etc/vsftpd/virtual_users.db</span><br><span class="line"> <span class="comment">#把登录的验证信息写入数据库</span></span><br></pre></td></tr></table></figure>
+        
 
-<h2 id="2、重启container，验证结果"><a href="#2、重启container，验证结果" class="headerlink" title="2、重启container，验证结果"></a>2、重启container，验证结果</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">docker restart vsftpd</span><br><span class="line">或者：</span><br><span class="line">sudo service docker status 查看服务</span><br><span class="line">sudo service docker <span class="keyword">start</span> 启动服务</span><br><span class="line"><span class="keyword">ftp</span>保存位置</span><br><span class="line">/my/<span class="keyword">data</span>/<span class="keyword">directory</span>/myuser/</span><br></pre></td></tr></table></figure>
 
-<h1 id="三、ftp两种模式介绍"><a href="#三、ftp两种模式介绍" class="headerlink" title="三、ftp两种模式介绍"></a>三、ftp两种模式介绍</h1><h2 id="1、主动模式"><a href="#1、主动模式" class="headerlink" title="1、主动模式"></a>1、主动模式</h2><p>文件传输是客服端建立服务 然后ftp服务端根据这个服务推送文件数据过来</p>
-<h2 id="2、被动模式"><a href="#2、被动模式" class="headerlink" title="2、被动模式"></a>2、被动模式</h2><p>文件传输是ftp服务根据PASV_MIN_PORT~ PASV_MAX_PORT这2个环境变量的范围随机一个ip提供服务给客服端下载</p>
-<h2 id="3、总结"><a href="#3、总结" class="headerlink" title="3、总结"></a>3、总结</h2><p>根据上面的模式 使用主动模式 客服端如果存在防火墙请把服务端口号开放出来</p>
-<p>使用被动模式 服务端就要把PASV_MIN_PORT~ PASV_MAX_PORT范围的端口开放出来</p>
-<p>如果使用了docker PASV_MIN_PORT~ PASV_MAX_PORT 这个范围的端口请映射成一样的</p>
-]]></content>
-      <categories>
-        <category>ftp</category>
-        <category>环境</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>环境</tag>
-        <tag>ftp</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux_前世今生</title>
-    <url>/2020/02/22/Linux_%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F/</url>
-    <content><![CDATA[<h1 id="一、-Linux的前世"><a href="#一、-Linux的前世" class="headerlink" title="一、 Linux的前世"></a>一、 Linux的前世</h1><h2 id="1、时间表"><a href="#1、时间表" class="headerlink" title="1、时间表"></a>1、时间表</h2><table>
-<thead>
-<tr>
-<th align="left"><strong>1969年</strong></th>
-<th><strong>Unix诞生于贝尔实验室</strong></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><strong>1984年</strong></td>
-<td><strong>谭宁邦 Minix开发者 教学</strong></td>
-</tr>
-<tr>
-<td align="left"><strong>1984年</strong></td>
-<td><strong>斯托曼 自由软件（FSF）与GNU项目发起人，GPL（通用公共许可）协议</strong></td>
-</tr>
-<tr>
-<td align="left"><strong>1991年</strong></td>
-<td><strong>Linus Torvalds托瓦兹 linux内核之父</strong></td>
-</tr>
-</tbody></table>
-<h2 id="2、故事梗概"><a href="#2、故事梗概" class="headerlink" title="2、故事梗概"></a>2、故事梗概</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">早在Linux出现之前的二十年（<span class="number">1970</span>年代），就有一个相当稳定而成熟的操作系统了，那就是Linux的前身Unix。</span><br><span class="line"><span class="comment">//linux的核心是由Linus Torvalds（拖瓦尔兹，莱纳斯）在1991年时候开发出来的，放在网络上给大家提供下载，后来大家感觉此物</span></span><br><span class="line">好用而精简。后来相关技术人员就去下载研究他了，那为什么这么多人喜欢她呢，下面慢慢说来。</span><br><span class="line">----------------------------------------------------------------------------------------</span><br><span class="line"><span class="number">1969</span>年以前：</span><br><span class="line">早期的计算机并不像现在一样，人手一个，一般是用于科技研究、军事、技术单位等使用，我们很难碰到。</span><br><span class="line"><span class="comment">//造成一个问题就是机器很少人特别多，也许一个大学里面只有一台，但是有N多人都想用。在1960年麻省理工学院发展了“相容分时系统CTSS” 可以让多个终端系统连接大型主机。就是1个服务器连接多个客户端。这仿佛就是多个人同时使用一台计算机，其实其中有cpu分片的功能来完成此任务。</span></span><br><span class="line">如此，终端设备无论在哪只要在终端机前面输入输出作业就可以利用主机提供的功能。终端没有运算能力只管输入输出。一般比较先进的也就提供<span class="number">30</span>个不到的终端</span><br><span class="line">在<span class="number">1965</span>年后，贝尔实验室Bell、麻省理工学院MIT、奇异公司GE，发起了Multics计划，让主机可以达成<span class="number">300</span>个终端。后来因为资金不足、计划进度等问题，就退出研究了。</span><br><span class="line"></span><br><span class="line"><span class="number">1969</span>年：</span><br><span class="line">贝尔研究室退出了Multics计划，但是原计划的人员中有一位Ken Thompson（汤姆森。肯），<span class="number">1969</span>年<span class="number">8</span>月，这哥们趁老婆不在家<span class="comment">//自己用4周时间写了一个核心程序，汤姆森将Multics计划话中的系统简化了，最后叫Unics（还不叫Unix）</span></span><br><span class="line"></span><br><span class="line"><span class="number">1973</span>年：Unix正式诞生</span><br><span class="line">由于汤姆森这个b，写的这个系统是在太好用了，经过贝尔实验室的流传与数次改版，成为如今用C语言写成的Unics核心，也就是Unix。</span><br><span class="line"></span><br><span class="line"><span class="number">1977</span>年：</span><br><span class="line"><span class="comment">//Unix代码使用高级C语言编写，非常具有移植性，只要取得此代码加以更改编写就可以移植到其他的主机上。柏克莱大学bill joy对代码进行修改后命名为Berkeley Software Distribution（BSD）。</span></span><br><span class="line"></span><br><span class="line"><span class="number">1979</span>年：</span><br><span class="line">软件很好用，广为流传，很多公司针对自己的计算机开发自己的版本，<span class="number">1979</span>年时才慢慢转移到家用主机上面</span><br><span class="line"></span><br><span class="line"><span class="number">1984</span>年：GNU计划与FSF基金会</span><br><span class="line">Richard Mathew Stallman（史托曼）在<span class="number">1984</span>年发起GNU计划，计划目的时：建立一个自由、开放的Unix系统。于是他不仅宣传让同事使用此内核程序，自己还开编写C语言的编译器也就是gcc</span><br><span class="line">其中GNU开发的几个重要软件：</span><br><span class="line"><span class="comment">//Emacs 代码编辑器工具</span></span><br><span class="line">GNU C （GCC）</span><br><span class="line">GNU C Library （glibc）</span><br><span class="line">Bash shell</span><br><span class="line">后来的很多软件都可以通过这些基础程序开发。</span><br><span class="line"></span><br><span class="line"><span class="number">1991</span>年芬兰的赫尔辛基大学的<span class="comment">//Linus Torvalds（拖瓦兹，莱纳斯），他使用bash，gcc等工具写了一个内核程序，可以在386机器上运行，从此开始Linux的发展之路。</span></span><br><span class="line">为什么称为GNU？</span><br><span class="line"><span class="comment">//GNU时GNU‘S Not Unix，gnu不是Unix～，在程序中是无限循环意思。</span></span><br><span class="line">什么是open source哪？</span><br><span class="line"><span class="comment">//程序的编写者，将源代码一起公布。</span></span><br><span class="line"></span><br><span class="line">后来很多人觉得这个linux内核很不错，就一起研究。</span><br><span class="line">查看内核命令uname -r</span><br><span class="line"><span class="number">2.6</span><span class="number">.18</span>-<span class="number">92</span>.el5</span><br><span class="line">主版本.次版本.释放出版本-修改版本</span><br><span class="line">主版本为奇数：说明是测试版比如<span class="number">2.5</span>.xx</span><br><span class="line">主版本为偶数：稳定版本如：<span class="number">2.6</span>.xx</span><br><span class="line">所以你对别人说版本时候，要说清楚是内核版本，还是如：linux的redhat6发行版本</span><br><span class="line"></span><br><span class="line">什么是Unix like？</span><br><span class="line"><span class="comment">//不是喜欢，是很像Unix的系统</span></span><br><span class="line">Linux distribution是什么？</span><br><span class="line"><span class="comment">//kernel+Softwares+tools我们称之为Linux distribution，翻译linux发行商软件。</span></span><br><span class="line"></span><br><span class="line"><span class="number">2</span>、现在主流基于linux的系统</span><br><span class="line"><span class="comment">//Debian、centos、Ubuntu、Gentoo、RedHat、Kali Linux、Arch Linux、OpenSuse、Deepin（国产）</span></span><br></pre></td></tr></table></figure>
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/02/22/docker_%E6%90%AD%E5%BB%BAftp%E6%9C%8D%E5%8A%A1%E5%99%A8/" rel="prev" title="Docker_搭建ftp服务器">
+      <i class="fa fa-chevron-left"></i> Docker_搭建ftp服务器
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2020/02/23/java_%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E6%90%AD%E5%BB%BA/" rel="next" title="Java_开发环境的搭建">
+      Java_开发环境的搭建 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+	
+	
+	
+  </article>
+  
+  
+  
 
-<hr>
-<h1 id="二、Linux的今生"><a href="#二、Linux的今生" class="headerlink" title="二、Linux的今生"></a>二、Linux的今生</h1><h2 id="1、Linux是什么"><a href="#1、Linux是什么" class="headerlink" title="1、Linux是什么"></a>1、Linux是什么</h2><figure class="highlight python"><table><tr><td class="code"><pre><span class="line">Linux就是个操作系统：它和Windows XP、Windows <span class="number">2003</span>、<span class="number">2008</span>什么的一样就是一个操作系统而已</span><br><span class="line"><span class="number">1.1</span> 那什么又是操作系统呢？</span><br><span class="line">// 操作系统（Operation System, 简称OS）是管理和控制计算机硬件与软件资源的计算机程序，是直接运行在“裸机”上的最基本的系统软件，任何其他软件都必须在操作系统的支持下才能运行。</span><br><span class="line">简单来说，操作系统就是一个程序，这个程序和我们平时使用的程序略有不同，它的作用是帮助我们协调、管理和控制计算机硬件和软件.</span><br></pre></td></tr></table></figure>
+  </div>
 
-<h2 id="2、Linux能干什么"><a href="#2、Linux能干什么" class="headerlink" title="2、Linux能干什么"></a>2、Linux能干什么</h2><blockquote>
-<p>它能当服务器，服务器上安装者各种企业应用、服务。</p>
-<p>比如：Web服务（apache，就是能架设网站的）、数据库（MySQL，存储网站信息数据的）、博客系统（wordpress） 等……</p>
-</blockquote>
-<h2 id="3、Linux在哪里干"><a href="#3、Linux在哪里干" class="headerlink" title="3、Linux在哪里干"></a>3、Linux在哪里干</h2><blockquote>
-<p>比如某网站的服务器，他们肯定用Linux。再比如某网站的数据库，他们差不多也基于Linux。</p>
-<p>再比如机关部门、学校、东莞夜总会、某中介公司，总之他们都用的到Linux。 因为他们的部分业务需要在网络上处理，需要存储，需要管理数据。那么恰恰Linux就是很好的服务端操作系统</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>讲故事</tag>
-      </tags>
-  </entry>
-</search>
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let activeClass = CONFIG.comments.activeClass;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+  
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、什么是Java"><span class="nav-text">一、什么是Java</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、Java能干什么"><span class="nav-text">二、Java能干什么</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、为什么要学Java"><span class="nav-text">三、为什么要学Java</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#四、Java学些什么"><span class="nav-text">四、Java学些什么</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、Java基础"><span class="nav-text">1、Java基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一部分：Java开发介绍"><span class="nav-text">第一部分：Java开发介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二部分：Java数组"><span class="nav-text">第二部分：Java数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第三部分：Java面向对象"><span class="nav-text">第三部分：Java面向对象</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第四部分：常用基础类"><span class="nav-text">第四部分：常用基础类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第五部分：集合"><span class="nav-text">第五部分：集合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第六部分：IO流"><span class="nav-text">第六部分：IO流</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第七部分：多线程"><span class="nav-text">第七部分：多线程</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第八部分：异常"><span class="nav-text">第八部分：异常</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第九部分：网络"><span class="nav-text">第九部分：网络</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第十部分：反射"><span class="nav-text">第十部分：反射</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、JavaWeb课程"><span class="nav-text">2、JavaWeb课程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一部分：HTML5"><span class="nav-text">第一部分：HTML5</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二部分：CSS3"><span class="nav-text">第二部分：CSS3</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第三部分：JavaScript"><span class="nav-text">第三部分：JavaScript</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第四部分：MySQL使用"><span class="nav-text">第四部分：MySQL使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第五部分：JDBC连接池"><span class="nav-text">第五部分：JDBC连接池</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第六部分：Servlet"><span class="nav-text">第六部分：Servlet</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第七部分：JSP"><span class="nav-text">第七部分：JSP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第八部分：AJAX"><span class="nav-text">第八部分：AJAX</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第九部分：jQuery"><span class="nav-text">第九部分：jQuery</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第十部分：Bootstrap"><span class="nav-text">第十部分：Bootstrap</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、Java框架课程"><span class="nav-text">3、Java框架课程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一部分：Maven"><span class="nav-text">第一部分：Maven</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二部分：Hibernate"><span class="nav-text">第二部分：Hibernate</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第三部分：Spring"><span class="nav-text">第三部分：Spring</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第四部分：Spring-MVC"><span class="nav-text">第四部分：Spring MVC</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第五部分：MyBatis"><span class="nav-text">第五部分：MyBatis</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第六部分：WebService"><span class="nav-text">第六部分：WebService</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第七部分：SVN"><span class="nav-text">第七部分：SVN</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第八部分：Activiti"><span class="nav-text">第八部分：Activiti</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4、Java-云数据课程"><span class="nav-text">4、Java + 云数据课程</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一部分：Linux版本"><span class="nav-text">第一部分：Linux版本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二部分：FastDFS"><span class="nav-text">第二部分：FastDFS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第三部分：MySQL优化"><span class="nav-text">第三部分：MySQL优化</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第四部分：Nginx反向代理"><span class="nav-text">第四部分：Nginx反向代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第五部分：Quartz-作业调度"><span class="nav-text">第五部分：Quartz 作业调度</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第六部分：Redis-高性能-Key-Value-数据库"><span class="nav-text">第六部分：Redis 高性能(Key-Value)数据库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第七部分：Shiro-安全-权限-框架"><span class="nav-text">第七部分：Shiro 安全(权限)框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第八部分：Lucene-amp-Solr全文检索"><span class="nav-text">第八部分：Lucene&amp;Solr全文检索</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第九部分：Zookeeper-分布式系统"><span class="nav-text">第九部分：Zookeeper 分布式系统</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第十部分：MyCAT-大数据集群"><span class="nav-text">第十部分：MyCAT 大数据集群</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第十一部分：Dubbo实现分布式架构"><span class="nav-text">第十一部分：Dubbo实现分布式架构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第十二部分：ActiveMQ-消息队列"><span class="nav-text">第十二部分：ActiveMQ 消息队列</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第十三部分：分布式事务和单点登录"><span class="nav-text">第十三部分：分布式事务和单点登录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第十四部分：分布式框架原理-采用视频资料教学"><span class="nav-text">第十四部分：分布式框架原理(采用视频资料教学)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第十五部分：基于SpringMVC的集成单元测试MockMVC"><span class="nav-text">第十五部分：基于SpringMVC的集成单元测试MockMVC</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第十六部分：SpringBoot-快速构建JavaEE项目"><span class="nav-text">第十六部分：SpringBoot 快速构建JavaEE项目</span></a></li></ol></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="yuwenwu"
+      src="/images/avatar.gif">
+  <p class="site-author-name" itemprop="name">yuwenwu</p>
+  <div class="site-description" itemprop="description">余文武的个人博客</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/ywwgithub" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;ywwgithub" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://mail.qq.com/" title="E-Mail → https:&#x2F;&#x2F;mail.qq.com&#x2F;" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title">
+      <i class="fa fa-fw fa-link"></i>
+      友链
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://www.baidu.com/" title="https:&#x2F;&#x2F;www.baidu.com&#x2F;" rel="noopener" target="_blank">Baidu</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://github.com/" title="https:&#x2F;&#x2F;github.com" rel="noopener" target="_blank">Github</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://blog.csdn.net/w47_csdn/article/details/88858343" title="https:&#x2F;&#x2F;blog.csdn.net&#x2F;w47_csdn&#x2F;article&#x2F;details&#x2F;88858343" rel="noopener" target="_blank">gitalk</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>	
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">yuwenwu</span>
+</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest-nomobile.min.js"></script>
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+  <script defer src="/lib/three/three.min.js"></script>
+    <script defer src="/lib/three/three-waves.min.js"></script>
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+
+
+</html>

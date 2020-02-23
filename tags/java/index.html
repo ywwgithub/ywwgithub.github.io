@@ -35,21 +35,18 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"scrollpercent":true,"b2t":true,"onmobile":false},"copycode":{"enable":true,"show_result":"复制成功","style":"default"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":{"gitalk":{"order":-2}}},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":true,"preload":true},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="一、准备工作1、安装了docker-io或者docker-ceCentos：$ sudo yum install docker-ce Ubuntu：$ sudo apt-get update        $ sudo apt-get install docker-ce  2、要有一个vsftpd的docker镜像1. docker search vsftpd         #寻找vsftpd的">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Docker搭建ftp服务器">
-<meta property="og:url" content="http://yoursite.com/2020/02/22/docker%E6%90%AD%E5%BB%BAftp%E6%9C%8D%E5%8A%A1%E5%99%A8/index.html">
+  <meta name="description" content="余文武的个人博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="破窗理论">
+<meta property="og:url" content="http://yoursite.com/tags/java/index.html">
 <meta property="og:site_name" content="破窗理论">
-<meta property="og:description" content="一、准备工作1、安装了docker-io或者docker-ceCentos：$ sudo yum install docker-ce Ubuntu：$ sudo apt-get update        $ sudo apt-get install docker-ce  2、要有一个vsftpd的docker镜像1. docker search vsftpd         #寻找vsftpd的">
+<meta property="og:description" content="余文武的个人博客">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-02-22T15:31:11.000Z">
-<meta property="article:modified_time" content="2020-02-22T15:59:58.923Z">
 <meta property="article:author" content="yuwenwu">
-<meta property="article:tag" content="Linux">
-<meta property="article:tag" content="ftp">
+<meta property="article:tag" content="Java，Linux，软件测试，工作狂">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/2020/02/22/docker%E6%90%AD%E5%BB%BAftp%E6%9C%8D%E5%8A%A1%E5%99%A8/">
+<link rel="canonical" href="http://yoursite.com/tags/java/">
 
 
 <script id="page-configurations">
@@ -57,11 +54,11 @@
   CONFIG.page = {
     sidebar: "",
     isHome: false,
-    isPost: true
+    isPost: false
   };
 </script>
 
-  <title>Docker搭建ftp服务器 | 破窗理论</title>
+  <title>标签: java | 破窗理论</title>
   
 
 
@@ -146,17 +143,17 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">3</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签<span class="badge">6</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">2</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类<span class="badge">5</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">2</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档<span class="badge">4</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -207,110 +204,70 @@
           <div class="content">
             
 
-  <div class="posts-expand">
-      
   
   
-  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/02/22/docker%E6%90%AD%E5%BB%BAftp%E6%9C%8D%E5%8A%A1%E5%99%A8/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="yuwenwu">
-      <meta itemprop="description" content="余文武的个人博客">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="破窗理论">
-    </span>
-      <header class="post-header">
-        <h1 class="post-title" itemprop="name headline">
-          Docker搭建ftp服务器
+  
+  <div class="post-block">
+    <div class="posts-collapse">
+      <div class="collection-title">
+        <h1 class="collection-header">java
+          <small>标签</small>
         </h1>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-02-22 23:31:11 / 修改时间：23:59:58" itemprop="dateCreated datePublished" datetime="2020-02-22T23:31:11+08:00">2020-02-22</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/ftp/" itemprop="url" rel="index">
-                    <span itemprop="name">ftp</span>
-                  </a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+      </div>
 
       
-        <h1 id="一、准备工作"><a href="#一、准备工作" class="headerlink" title="一、准备工作"></a>一、准备工作</h1><h2 id="1、安装了docker-io或者docker-ce"><a href="#1、安装了docker-io或者docker-ce" class="headerlink" title="1、安装了docker-io或者docker-ce"></a>1、安装了docker-io或者docker-ce</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">Centos：$ sudo yum <span class="keyword">install</span> docker-ce</span><br><span class="line"> </span><br><span class="line">Ubuntu：$ sudo apt-<span class="keyword">get</span> <span class="keyword">update</span></span><br><span class="line">        $ sudo apt-<span class="keyword">get</span> <span class="keyword">install</span> docker-ce</span><br></pre></td></tr></table></figure>
-
-<h2 id="2、要有一个vsftpd的docker镜像"><a href="#2、要有一个vsftpd的docker镜像" class="headerlink" title="2、要有一个vsftpd的docker镜像"></a>2、要有一个vsftpd的docker镜像</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">1. docker search vsftpd         <span class="comment">#寻找vsftpd的镜像</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">#假如我们找到一个最多引用的，叫fauria/vsftpd</span></span><br><span class="line"> </span><br><span class="line">2. docker pull fauria/vsftpd  <span class="comment">#把镜像pull到本地</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="3、创建vsftpd的container"><a href="#3、创建vsftpd的container" class="headerlink" title="3、创建vsftpd的container"></a>3、创建vsftpd的container</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">$ docker run -d -p 21:21 -p 20:20 -p 21100-21110:21100-21110 -v /Ftpfile:/home/vsftpd -e FTP_USER=myuser -e FTP_PASS=mypass -e PASV_ADDRESS=192.168.120.88 -e PASV_MIN_PORT=21100 -e PASV_MAX_PORT=21110 <span class="comment">--name vsftpd --restart=always fauria/vsftpd</span></span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line"><span class="comment">#-p进行端口绑定映射</span></span><br><span class="line"><span class="comment"># -v进行文件目录的映射 FTP_UESR 和FTP_PASS如果设定了会在container里面的 </span></span><br><span class="line"><span class="comment">#/etc/vsftpd/virtual_users.txt</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">#PASV_MIN_PORT和PASV_MAX_PORT映射的是被动模式下端口使用范围</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">#PASV_ADDRESS指的的宿主机地址</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="二、配置成自己想要的参数"><a href="#二、配置成自己想要的参数" class="headerlink" title="二、配置成自己想要的参数"></a>二、配置成自己想要的参数</h1><h2 id="1、修改、完善vsftpd的设置"><a href="#1、修改、完善vsftpd的设置" class="headerlink" title="1、修改、完善vsftpd的设置"></a>1、修改、完善vsftpd的设置</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="comment">#1、我们先进入container里面</span></span><br><span class="line"> </span><br><span class="line">docker exec -i -t vsftpd bash </span><br><span class="line"> </span><br><span class="line"><span class="comment">#2、修改并生成虚拟用户模式下的用户db文件</span></span><br><span class="line"> </span><br><span class="line">vi /etc/vsftpd/virtual_users.txt <span class="comment">#编辑配置文件写入用户跟密码</span></span><br><span class="line"> </span><br><span class="line"><span class="comment">#假如我们添加了user用户</span></span><br><span class="line"> </span><br><span class="line">mkdir /home/vsftpd/user <span class="comment">#建立新用户文件夹 </span></span><br><span class="line"> </span><br><span class="line">/usr/bin/db_load -T -t hash</span><br><span class="line"> -f /etc/vsftpd/virtual_users.txt /etc/vsftpd/virtual_users.db</span><br><span class="line"> <span class="comment">#把登录的验证信息写入数据库</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="2、重启container，验证结果"><a href="#2、重启container，验证结果" class="headerlink" title="2、重启container，验证结果"></a>2、重启container，验证结果</h2><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">docker restart vsftpd</span><br><span class="line">或者：</span><br><span class="line">sudo service docker status 查看服务</span><br><span class="line">sudo service docker <span class="keyword">start</span> 启动服务</span><br><span class="line"><span class="keyword">ftp</span>保存位置</span><br><span class="line">/my/<span class="keyword">data</span>/<span class="keyword">directory</span>/myuser/</span><br></pre></td></tr></table></figure>
-
-<h1 id="三、ftp两种模式介绍"><a href="#三、ftp两种模式介绍" class="headerlink" title="三、ftp两种模式介绍"></a>三、ftp两种模式介绍</h1><h2 id="1、主动模式"><a href="#1、主动模式" class="headerlink" title="1、主动模式"></a>1、主动模式</h2><p>文件传输是客服端建立服务 然后ftp服务端根据这个服务推送文件数据过来</p>
-<h2 id="2、被动模式"><a href="#2、被动模式" class="headerlink" title="2、被动模式"></a>2、被动模式</h2><p>文件传输是ftp服务根据PASV_MIN_PORT~ PASV_MAX_PORT这2个环境变量的范围随机一个ip提供服务给客服端下载</p>
-<h2 id="3、总结"><a href="#3、总结" class="headerlink" title="3、总结"></a>3、总结</h2><p>根据上面的模式 使用主动模式 客服端如果存在防火墙请把服务端口号开放出来</p>
-<p>使用被动模式 服务端就要把PASV_MIN_PORT~ PASV_MAX_PORT范围的端口开放出来</p>
-<p>如果使用了docker PASV_MIN_PORT~ PASV_MAX_PORT 这个范围的端口请映射成一样的</p>
-
+    <div class="collection-year">
+      <h1 class="collection-header">2020</h1>
     </div>
 
-    
-    
-    
-	 
-      <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/Linux/" rel="tag">Jack Linux</a>
-              <a href="/tags/ftp/" rel="tag">Jack ftp</a>
-          </div>
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
 
-        
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-02-23T19:44:34+08:00"
+              content="2020-02-23">
+          02-23
+        </time>
+      </div>
 
+      <h2 class="post-title">
+          <a class="post-title-link" href="/2020/02/23/java_%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E7%9A%84%E6%90%AD%E5%BB%BA/" itemprop="url">
+            <span itemprop="name">Java_开发环境的搭建</span>
+          </a>
+      </h2>
 
-        
-    <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/2020/02/22/Linux%E7%9A%84%E5%89%8D%E4%B8%96%E4%BB%8A%E7%94%9F/" rel="prev" title="Linux的前世今生">
-      <i class="fa fa-chevron-left"></i> Linux的前世今生
-    </a></div>
-      <div class="post-nav-item"></div>
-    </div>
-      </footer>
-    
-	
-	
-	
+    </header>
   </article>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <div class="post-meta">
+        <time itemprop="dateCreated"
+              datetime="2020-02-23T19:44:34+08:00"
+              content="2020-02-23">
+          02-23
+        </time>
+      </div>
+
+      <h2 class="post-title">
+          <a class="post-title-link" href="/2020/02/23/Java_%E7%AE%80%E4%BB%8B/" itemprop="url">
+            <span itemprop="name">Java_简介</span>
+          </a>
+      </h2>
+
+    </header>
+  </article>
+
+    </div>
+  </div>
   
   
   
 
-  </div>
+  
+
 
 
           </div>
@@ -361,7 +318,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、准备工作"><span class="nav-text">一、准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、安装了docker-io或者docker-ce"><span class="nav-text">1、安装了docker-io或者docker-ce</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、要有一个vsftpd的docker镜像"><span class="nav-text">2、要有一个vsftpd的docker镜像</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、创建vsftpd的container"><span class="nav-text">3、创建vsftpd的container</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、配置成自己想要的参数"><span class="nav-text">二、配置成自己想要的参数</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、修改、完善vsftpd的设置"><span class="nav-text">1、修改、完善vsftpd的设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、重启container，验证结果"><span class="nav-text">2、重启container，验证结果</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#三、ftp两种模式介绍"><span class="nav-text">三、ftp两种模式介绍</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1、主动模式"><span class="nav-text">1、主动模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2、被动模式"><span class="nav-text">2、被动模式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3、总结"><span class="nav-text">3、总结</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -377,20 +333,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">5</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
